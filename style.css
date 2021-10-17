@@ -1,0 +1,202 @@
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #222;
+}
+
+body {
+    margin: 0;
+}
+.ratings i {
+    color: #f7b632;
+}
+
+.ratings{
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+img#logo{
+    height: 50px;
+    margin: 10px;
+}
+
+header li {
+    display: inline-block;
+    padding: 10px 1em;
+}
+
+header img, header li{
+    background-color: rgba(255, 255, 255, 0.77);
+    border-radius:10px;
+
+}
+
+header li a {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position:sticky;
+    top: 0;
+}
+
+header ul{
+    margin:0;
+    height: 100%;
+    padding:0;
+    display:flex;
+    align-items: center;
+}
+
+#product-summary {
+    display: flex;
+}
+
+#product-summary figure {
+    height: 400px;
+    background-image: url("images/book-item.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    background-color: #cccccc;
+    min-width: 45%;
+}
+
+#product-info {
+    padding-left: 20px;
+}
+
+#product-summary h2 {
+    text-transform:uppercase;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+#product-info p {
+    margin: 5 0 1em 0;
+}
+
+#pricing-container, #product-description, #author-info{
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: #dddddd;
+    padding: 1em 0;
+    margin-top: 1em;
+}
+
+#pricing-container {
+    margin-top:1em;
+    padding-right: 1em;
+}
+
+#pricing-container button {
+    background-color: #f0839e;
+    font-size: 1em;
+    padding: 10px 4em;
+    color: white;
+    border: none;
+    border-color: #dddddd;
+}
+
+#product-description p{
+    line-height: 1.6em;
+    margin: 0 0 1em 0;
+} 
+
+#product-description a {
+    color: blue;
+}
+
+button i{
+    color: white;
+    margin-right: 10px;
+}
+
+#pricing {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+#pricing-container h3 {
+    margin:0 1em 0 0;
+}
+
+main {
+    background-color: #f7f7f7f7;
+    display: flex;
+    justify-content: center;
+}
+
+article{
+    width: 60em;
+    background-color: white;
+    padding: 0em 10%;
+}
+
+#pricing p{
+    margin: 0;
+    color: red;
+}
+
+#pricing p:nth-child(2){
+    font-size: 1.2em;
+}
+
+#pricing p:nth-child(3){
+    font-size: 11px;
+}
+
+#product-details li{
+    margin-bottom: 1em;
+}
+
+#product-details{
+    margin: 2em 0;
+}
+
+#product-details ul {
+    padding:0;
+}
+
+#product-details h2{
+    text-transform: uppercase;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+}
+
+#author-info h3{
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+#author-info p{
+    padding-left: 1em;
+    line-height: 1.6em; 
+}
+
+ @media (max-width: 700px) {
+    .fa-bars {
+        display: flex;
+    }
+
+    nav {
+        display:none;
+
+    }
+}
+
+@media (max-width:600px){
+    #product-summary {
+    flex-direction: column;
+    }
+}
